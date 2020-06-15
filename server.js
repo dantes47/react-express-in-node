@@ -8,8 +8,8 @@ server.get('/api/clients', (req, res) => {
     const clients = [
         {id: 1, firstName: 'Manny', lastName: 'Awesome'},
         {id: 2, firstName: 'Lenny', lastName: 'Awful'},
-        {id: 3, firstName: 'Edison', lastName: 'Skinny'},
-        {id: 4, firstName: 'Paul', lastName: 'Round'}
+        {id: 2, firstName: 'Edison', lastName: 'Skinny'},
+        {id: 2, firstName: 'Paul', lastName: 'Round'}
     ];
 
     res.json(clients);
