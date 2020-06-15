@@ -1,0 +1,29 @@
+{
+  "name": "react-express-in-node",
+  "version": "1.0.0",
+  "description": "both Front && Back in Node with Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/dantes47/.."
+  },
+  "keywords": [
+    "react",
+    "express",
+    "server",
+    "node"
+  ],
+  "author": "Danny >> <dantes817@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
