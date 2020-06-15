@@ -4,8 +4,12 @@
   "description": "both Front && Back in Node with Express",
   "main": "server.js",
   "scripts": {
+    "all-clients-install": "cd all-clients && npm i",
+
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "all-clients": "npm start --prefix all-clients",
+    "dev": "concurrently \"npm run server\" \"npm run all-clients\""
   },
   "repository": {
     "type": "git",
