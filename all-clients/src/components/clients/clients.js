@@ -12,15 +12,19 @@ class Clients extends Component {
     componentDidMount() {
         fetch('/api/clients')
         .then(res => res.json())
-        .then(clients => this.setState({clients}, () => {
-            console.log(`Clients were fetched.. `, clients);    
-        }));
+        .then(clients => this.setState({clients}, () => 
+            console.log(`Clients were fetched.. `, clients)));
     }
 
     render() {
         return (
             <div>
                 <h2>Our Clients: </h2>
+                <ul>
+                    {this.state.clients.map(client => 
+                       <li key={client.id}>{client.firstName}     {client.lastName}</li>     
+                    )}
+                </ul>
             </div>
         );
     }
